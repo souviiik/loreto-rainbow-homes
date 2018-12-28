@@ -24,5 +24,10 @@
         .donate-now {
             margin-top: 32px;
         }
+
+        p.important-text {
+            color: lighten($dark-orange, 30%);
+            font-size: 14px;
+        }
     }
 }
