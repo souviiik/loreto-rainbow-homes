@@ -1,0 +1,26 @@
+#reach-us {
+    .black-dot {
+        background: $dark-grey;
+        width: 75px;
+        height: 75px;
+        padding-top: 25px;
+        border-radius: 50%;
+        color: $white;
+    }
+
+    .contact-block {
+        color: $white;
+        input[type='text'], textarea {
+            background: transparent;
+            border: 1px solid $dark-grey-3;
+            color: $white;
+            &::placeholder {
+                color: $white;
+                opacity: 1;
+            }
+        }
+        textarea {
+            resize: none;
+        }
+    }
+}

@@ -1,0 +1,108 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge,chrome=1')
+        meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+        link(rel='stylesheet' href='./css/bootstrap.css')
+        link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css')
+        link(rel='stylesheet' href='./css/main.css')
+        title Loreto Rainbow Homes | Donate
+    
+    body
+        include includes/header.pug
+
+        main#donate
+            .jumbotron.jumbotron-fluid.donate-bg.mb-0
+
+            .donate-top
+                .container.py-5
+                    h1.text-center.mb-5 Make Donation
+                    p We at Loreto Rainbow Homes would like to request you to come and join us In Making A Difference. Your support means a lot to us.
+                    p Donate by Cheque at Loreto Rainbow Homes Foundation with a copy of your PAN Card.
+                    p Please get in touch with our State office for in kind donation
+                    p All donations are exempted under section 80G of the Income Tax Act, 1961
+            .causes-block
+                .container.py-5
+                    h2.text-center.mb-5 Causes
+                    .row
+                        .col-md-6
+                            .col-md-12.causes-el.mb-4.p-4
+                                img.mr-4.float-left(src='assets/food.jpeg' alt='food')
+                                h3 Food for kids
+                                p Fusce mauris leo, dapibus quis est in, elementum elementum odio.
+                                .btn.btn-orange.px-5 Donate
+                                .clearfix
+                        .col-md-6
+                            .col-md-12.causes-el.mb-4.p-4
+                                img.mr-4.float-left(src='assets/education.jpeg' alt='education')
+                                h3 Education for kids
+                                p Fusce mauris leo, dapibus quis est in, elementum elementum odio.
+                                .btn.btn-orange.px-5 Donate
+                                .clearfix
+                        .col-md-6
+                            .col-md-12.causes-el.mb-4.p-4
+                                img.mr-4.float-left(src='assets/health.jpeg' alt='health checkup')
+                                h3 Health checkup for kids
+                                p Fusce mauris leo, dapibus quis est in, elementum elementum odio.
+                                .btn.btn-orange.px-5 Donate
+                                .clearfix
+                        .col-md-6
+                            .col-md-12.causes-el.mb-4.p-4
+                                img.mr-4.float-left(src='assets/care.jpeg' alt='Comprehensive care')
+                                h3 Comprehensive care for kids
+                                p Fusce mauris leo, dapibus quis est in, elementum elementum odio.
+                                .btn.btn-orange.px-5 Donate
+                                .clearfix
+            .recurring-donation
+                .container.py-5
+                    h2.mb-5 Please get in touch with our State office for in kind donation
+                    .row.mb-3
+                        .col-md-12
+                            .form-check.form-check-inline
+                                input#one-time.form-check-input(type='radio' name='recurring-donation' value='one-time')
+                                label.form-check-label(for='one-time') One Time
+                            .form-check.form-check-inline
+                                input#recurring.form-check-input(type='radio' name='recurring-donation' value='recurring')
+                                label.form-check-label(for='recurring') Recurring
+                    .row
+                        .col-md-3
+                            .form-group
+                                label(for='fullName') Full Name
+                                input#fullName.form-control(type='text' placeholder='Full Name')
+
+                        .col-md-3
+                            .form-group
+                                label(for='emailId') Email
+                                input#emailId.form-control(type='email' placeholder='Email')
+                        .col-md-4
+                            .form-group
+                                label(for='mobile') Call back number
+                                input#mobile.form-control(type='text' placeholder='Call back number')
+                    .row
+                        .col-md-3
+                            .form-group
+                                label(for='donationCause') I want to donate for
+                                select#donationCause.form-control
+                                    option Select
+                                    option Food for kids
+                                    option Education for kids
+                                    option Health checkup for kids
+                                    option Comprehensive care for kids
+
+                        .col-md-3
+                            .form-group
+                                label(for='currency') Currency
+                                select#currency.form-control
+                                    option Select
+                                    option INR
+                                    option USD
+                                    option GBP
+                        .col-md-4
+                            .form-group
+                                label(for='amount') How much do you want to donate?
+                                input#amount.form-control(type='text' placeholder='Donation Amount')
+                        .col-md-2
+                            .btn.btn-warning.donate-now Donate Now
+
+        include includes/footer.pug

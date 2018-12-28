@@ -1,0 +1,36 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge,chrome=1')
+        meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+        link(rel='stylesheet' href='./css/bootstrap.css')
+        link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css')
+        link(rel='stylesheet' href='./css/main.css')
+        title Loreto Rainbow Homes | Home
+    
+    body
+        include includes/header.pug
+
+        main
+            .jumbotron.jumbotron-fluid.jumbotron-bg.mb-0
+                .container(style='margin-top: 360px;')
+                    .row
+                        .col-md-10.p-2.offset-md-2(style='background: rgba(0,0,0,0.5);')
+                            h1.display-5 Welcome to Loreto Rainbow Homes
+                            p.lead Loreto Rainbow Homes provides non-custodial, residential, comprehensive, long-time care for girls who formerly lived on the streets.
+            
+            .row.no-gutters
+                .col-md-4.box-one.p-4
+                    h2 Our Vision
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti quaerat facere, nesciunt inventore eum sequi pariatur consequatur. Vero commodi, placeat sunt ipsam explicabo, odit soluta ipsum itaque eos facere ab.
+                .col-md-4.box-two.p-4
+                    h2 Our Mission
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt eos facilis culpa illo asperiores, ad aperiam magni similique est adipisci odit incidunt, soluta numquam, eum modi neque tempore eius delectus!
+                .col-md-4.box-three.p-4
+                    h2 Our values
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quidem, assumenda, deserunt saepe quo iste vitae quae! Deleniti cumque amet, ratione autem accusantium excepturi sed reiciendis, nesciunt qui veritatis, atque.
+
+            include includes/home/non-negotiable.pug
+            include includes/home/recent-causes.pug
+        include includes/footer.pug

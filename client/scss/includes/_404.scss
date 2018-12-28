@@ -1,0 +1,35 @@
+main#not-found {
+    .not-found-bg {
+        background: url(../assets/not-found-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 400px;
+        h1 {
+            color: $dark-grey;
+        }
+    }
+}
+
+main#reach-us {
+    .reach-us-bg {
+        background: url(../assets/reach-us-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 400px;
+        h1 {
+            color: $dark-grey;
+        }
+    }
+}
+
+main#donate {
+    .donate-bg {
+        background: url(../assets/donate-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 400px;
+        h1 {
+            color: $dark-grey;
+        }
+    }
+}

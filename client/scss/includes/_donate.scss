@@ -1,0 +1,28 @@
+#donate{
+    .causes-block{
+        background: url(../assets/leaves.png);
+        .causes-el {
+            background: $white;
+            border: 1px solid $light-grey-2;
+            h3 {
+                color: $dark-orange;
+                font-size: 22px;
+            }
+            &:hover {
+                box-shadow: 0px 0px 10px darken($light-grey, 30%);
+            }
+            img {
+                width: 135px;
+                height: 135px;
+            }
+        }
+    }
+    .recurring-donation {
+        background: $dark-orange;
+        color: $white;
+
+        .donate-now {
+            margin-top: 32px;
+        }
+    }
+}
