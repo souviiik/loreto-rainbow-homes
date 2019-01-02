@@ -10,7 +10,7 @@
 
     .contact-block {
         color: $white;
-        input[type='text'], textarea {
+        input[type='text'], input[type='email'], textarea {
             background: transparent;
             border: 1px solid $dark-grey-3;
             color: $white;

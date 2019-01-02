@@ -7,12 +7,20 @@ header
                         a(href="#") loretorhcoor@gmail.com
                     li 
                         a(href="#") 033 4603 6292
-            .float-right                
-                a.btn.btn-orange.mt-1.px-5(href='./donate.html') Make Donation
+            .float-right
+                input.px-3.py-1.mr-2(type="search", name="", placeholder="Search...")
+                button.btn-search.px-3.py-1 Search
             .clearfix
-    .header-main.text-center
-        a(href='/' title='Loreto Rainbow Homes')
-            img.site-logo.my-3(src='./assets/logo.png' alt='Loreto rainbow Homes Logo')
+    .header-main.text-left
+        .container
+            a(href='/' title='Loreto Rainbow Homes')
+                img.site-logo.my-3.mr-3.float-left(src='./assets/logo.png' alt='Loreto rainbow Homes Logo')
+            .float-left.p-3
+                h1 Loreto Rainbow Homes
+                h2 Making life worth living
+            .float-right
+                a.btn.btn-orange.mt-4.px-5.py-3(href='./donate.html') Make Donation
+            .clearfix
     .header-bottom
         .container
             include navigation.pug
