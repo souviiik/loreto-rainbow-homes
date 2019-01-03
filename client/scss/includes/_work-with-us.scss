@@ -1,0 +1,39 @@
+main#work-with-us {
+    .work-with-us-bg {
+        background: url(../assets/work-with-us-bg.jpeg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 400px;
+        h1 {
+            color: $dark-grey;
+        }
+    }
+
+    .volunteer-block {
+        background: $dark-yellow;
+
+        .volunteer-now {
+            margin-top: 32px;
+        }
+    }
+
+    input[type='text'], input[type='email'], textarea, select {
+        background: transparent;
+        border: 1px solid $dark-grey-3;
+        color: $dark-grey-3;
+        &::placeholder {
+            color: $dark-grey-3;
+            opacity: 1;
+        }
+    }
+
+    select {
+        option {
+            color: $dark-grey-2;
+        }
+    }
+
+    textarea {
+        resize: none;
+    }
+}

@@ -1,0 +1,192 @@
+main#milestone {
+    .milestone-bg {
+        background: url(../assets/milestone-bg.jpeg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 400px;
+        h1 {
+            color: $dark-grey;
+        }
+    }
+
+    /*** Timeline ***--------------------------------------*/
+
+    .timeline-wrap {
+        width: 100%;
+        height: 1700px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .timeline-container {
+        width: 100%;
+        position: relative;
+        text-align: left;
+        float: left;
+        padding-bottom: 50px;
+        z-index: 999;
+        &:before {
+            position: absolute;
+            width: 5px;
+            background: $dark-orange;
+            top: 80px;
+            left: 50%;
+            margin-left: -2px;
+            content: '';
+            height: 84%;
+        }
+    }
+
+    .timeline-ico {
+        background: $dark-orange;
+        width: 55px;
+        height: 55px;
+        left: 50%;
+        margin-left: -27px;
+        position: absolute;
+        border: 5px solid $dark-orange;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+    }
+
+    .timeline-row {
+        width: 100%;
+        clear: both;
+        float: left;
+        position: relative;
+        padding: 30px 0;
+    }
+
+    .left-side {
+        float: left;
+        width: 48%;
+        position: relative;
+    }
+
+    .right-side {
+        float: right;
+        width: 48%;
+        position: relative;
+        padding-left: 2%;
+    }
+
+    .left-side {
+        text-align: left;
+        float: left;
+        padding-right: 2%;
+    }
+
+    .timeline-con {
+        display: block;
+        .detail {
+            text-align: right;
+            font-size: 18px !important;
+            color: $dark-orange;
+            font-style: italic;
+            letter-spacing: -2px;
+        }
+        .year {
+            text-align: right;
+            font-weight: 900;
+            color: $dark-orange;
+            font-size: 72px;
+            font-family: 'Limelight', arial, helvetica, sans-serif;
+            line-height: 1em;
+        }
+    }
+
+    .right-side .content {
+        width: 507px;
+        height: auto;
+        margin-left: 10px;
+        padding-left: 29px;
+        p {
+            text-align: left;
+            font-size: 18px !important;
+            color: $dark-grey-2;
+            background: $dark-yellow;
+            letter-spacing: -1px;
+            padding: 30px;
+
+            &:before{
+                content:'';
+                display:block;
+                width:0;
+                height:0;
+                position:absolute;
+                border-top: 0px solid transparent;
+                border-bottom: 20px solid transparent;
+                border-right: 50px solid $dark-yellow;
+                left: 11px;
+                top: 0px;
+            }
+        }
+    }
+
+    .left-side .content {
+        width: 507px;
+        height: auto;
+        float: right;
+        margin-right: 10px;
+        padding-right: 29px;
+        background: url(../../assets/right-side.png) no-repeat top right;
+        p {
+            text-align: left;
+            font-size: 18px !important;
+            color: $white;
+            background: $dark-orange;
+            letter-spacing: -1px;
+            padding: 30px;
+
+            &:after {
+                content:'';
+                display:block;
+                width:0;
+                height:0;
+                position:absolute;
+                border-top: 0px solid transparent;
+                border-bottom: 20px solid transparent;
+                border-left: 50px solid $dark-orange;
+                right: 11px;
+                top: 0px;
+            }
+        }
+    }
+
+    .right-side .timeline-con {
+        .detail {
+            text-align: left;
+            font-size: 18px !important;
+            color: $dark-orange;
+            font-style: italic;
+            letter-spacing: -2px;
+        }
+        .year {
+            text-align: left;
+            font-weight: 900;
+            color: $dark-orange;
+            font-size: 72px;
+            font-family: 'Limelight', arial, helvetica, sans-serif;
+            line-height: 1em;
+        }
+    }
+
+    .entry .timeline-con {
+        width: 535px;
+        height: 200px;
+    }
+
+    .left-side .timeline-con {
+        float: right;
+        margin-right: 40px;
+    }
+
+    .right-side .timeline-con {
+        float: left;
+        margin-left: 40px;
+    }
+}

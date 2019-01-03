@@ -138,6 +138,10 @@ main {
             }
         }
     }
+
+    .required-field {
+        color: $dark-orange;
+    }
 }
 
 .recent-causes-block {
@@ -173,6 +177,19 @@ footer {
                 width: 1em; /* Also needed for space (tweak if needed) */
                 margin-left: -1em; /* Also needed for space (tweak if needed) */
             }
+        }
+    }
+
+    div.site-credit-block {        
+        border-top: 1px dashed lighten($dark-grey, 20%);
+    }
+
+    p.txt-copyright, p.site-credit {
+        color: lighten($dark-grey, 20%);
+        font-size: 14px;
+
+        span {
+            color: lighten($dark-grey, 40%);
         }
     }
 }

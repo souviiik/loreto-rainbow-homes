@@ -1,0 +1,84 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge,chrome=1')
+        meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+        link(rel='stylesheet' href='./css/bootstrap.css')
+        link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css')
+        link(rel='stylesheet' href='./css/main.css')
+        title Loreto Rainbow Homes | Work with us
+    
+    body
+        include includes/header.pug
+
+        main#work-with-us
+            .jumbotron.jumbotron-fluid.work-with-us-bg.mb-0
+
+            .container.py-5
+                h1 Work with us
+                hr
+                .row
+                    .col-md-12
+                        h2 Career
+                        p Are you seeking a Job? Do you have zeal to work with children? To make a career in social development sector? If yes, then Loreto Rainbow Homes is the best place for you to get job-satisfaction and self-growth in your professional life.
+                        p We follow the organisation policy in recruitment.
+
+            .volunteer-block
+                .container
+                    .row
+                        .col-md-12.py-5.my-0
+                            h3.mb-3 Volunteer opportunities
+                            p Loreto Rainbow Homes invites you, your friends and every individual to join hands in Making Life Worth Living. Please share your idea, expertise and your valuable time with us.
+                            p Please share below details for volunteer opportunities that Loreto Rainbow Homes provide,
+                            p All fields marked with 
+                                span.required-field * 
+                                | must be completed
+                            form
+                                .row
+                                    .col-md-3
+                                        .form-group
+                                            label(for='fullName') Full Name 
+                                                span.required-field *
+                                            input#fullName.form-control(type='text' placeholder='Full Name')
+
+                                    .col-md-3
+                                        .form-group
+                                            label(for='emailId') Email 
+                                                span.required-field *
+                                            input#emailId.form-control(type='email' placeholder='Email')
+                                    .col-md-4
+                                        .form-group
+                                            label(for='mobile') Call back number 
+                                                span.required-field *
+                                            input#mobile.form-control(type='text' placeholder='Call back number')
+                                .row
+                                    .col-md-3
+                                        .form-group
+                                            label(for='volunteerCause') I want to volunteer for 
+                                                span.required-field *
+                                            select#volunteerCause.form-control
+                                                option Select
+                                                option Giving tuition
+                                                option Preparing child care plan and progress report
+                                                option Preparing Youth Plans
+                                                option Organising fun events for children’s recreation and extra-curricular activities
+                                                option Organising life skill and value education workshop
+                                                option Share creative and innovative ideas to help us
+
+                                    .col-md-3
+                                        .form-group
+                                            label(for='currency') Currency
+                                            select#currency.form-control
+                                                option Select
+                                                option INR
+                                                option USD
+                                                option GBP
+                                    .col-md-4
+                                        .form-group
+                                            label(for='amount') How much do you want to donate?
+                                            input#amount.form-control(type='text' placeholder='Donation Amount')
+                                    .col-md-2
+                                        .btn.btn-orange.volunteer-now Volunteer Now
+        
+        include includes/footer.pug
